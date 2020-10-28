@@ -330,9 +330,9 @@ namespace Microsoft.AspNetCore.Hosting.Tests
 
             var expectedBaggage = new []
             {
-                KeyValuePair.Create("Key1","value1"),
+                KeyValuePair.Create("Key1","value3"),
                 KeyValuePair.Create("Key2","value2"),
-                KeyValuePair.Create("Key1","value3")
+                KeyValuePair.Create("Key1","value1")
             };
 
             Assert.Equal(expectedBaggage, Activity.Current.Baggage);
